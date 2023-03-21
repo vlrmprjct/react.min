@@ -1,0 +1,18 @@
+@import './fonts';
+
+body {
+    font-family: 'OpenSans-Regular';
+    background: $bg;
+}
+
+h1, h2 {
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.app {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    height: 90vh;
+}

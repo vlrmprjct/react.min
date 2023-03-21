@@ -1,0 +1,42 @@
+{
+    "name": "react-kickstart",
+    "version": "1.0.0",
+    "description": "React Application Kickstart Project",
+    "main": "./dist",
+    "author": "Thomas Meschke <thomas.meschke@aifinyo.de>",
+    "license": "MIT",
+    "repository": "",
+    "scripts": {
+        "start": "NODE_ENV=development webpack serve --config config/webpack.config.js --env development --hot",
+        "build": "NODE_ENV=production webpack --config config/webpack.config.js --env production"
+    },
+    "dependencies": {
+        "react-dom": "^18.2.0",
+        "react": "^18.2.0",
+        "typescript": "^5.0.2"
+    },
+    "devDependencies": {
+        "@svgr/webpack": "^6.5.1",
+        "@types/react": "^18.0.28",
+        "@types/react-dom": "^18.0.11",
+        "copy-webpack-plugin": "^11.0.0",
+        "css-loader": "^6.7.3",
+        "css-minimizer-webpack-plugin": "^4.2.2",
+        "dotenv": "^16.0.3",
+        "dotenv-flow": "^3.2.0",
+        "dotenv-flow-webpack": "^1.1.0",
+        "html-webpack-plugin": "^5.5.0",
+        "mini-css-extract-plugin": "^2.7.5",
+        "sass": "^1.59.3",
+        "sass-loader": "^13.2.1",
+        "sass-resources-loader": "^2.2.5",
+        "style-loader": "^3.3.2",
+        "terser-webpack-plugin": "^5.3.7",
+        "ts-loader": "^9.4.2",
+        "webpack": "^5.76.2",
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-server": "^4.13.1"
+    }
+}
+
+
