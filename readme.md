@@ -10,10 +10,10 @@ Many kickstarter projects providing too many features and packages that no one n
 * Readable webpack config
 * Less thirdparty config packages
 
-### Environnment dot-env's
+### Environnment supported dot-env's
 * `.env.production`
 * `.env.development`
-* `.env.development.local`
+* `.env.local`
 
 ### Currently build-In
 * Typescript support ✅
