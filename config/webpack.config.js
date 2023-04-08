@@ -1,11 +1,13 @@
-const dotenv = require('dotenv-flow').config();
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
+const Env = require('dotenv');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const DotenvFlow = require('dotenv-flow-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+
+Env.config({ path: `.env.local`, override: true });
 
 module.exports = (env) => {
     return {
@@ -69,7 +71,12 @@ module.exports = (env) => {
             ],
         },
         plugins: [
-            new DotenvFlow(),
+            new Dotenv({
+                path: `./.env.${process.env.NODE_ENV}`,
+                safe: true,
+                systemvars: true,
+                silent: true,
+            }),
             new MiniCssExtractPlugin({
                 filename: '[name].[contenthash].css',
             }),
