@@ -1,6 +1,6 @@
 {
     "name": "react-kickstart",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "description": "React Application Kickstart Project",
     "main": "./dist",
     "author": "Thomas Meschke <thomas.meschke@aifinyo.de>",
