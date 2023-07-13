@@ -23,7 +23,7 @@
         "sourceMap": true,
         "declaration": false,
         "declarationMap": false,
-        "rootDir": "src",
+        // "rootDir": "src",
     },
     "include": [
         "src/**/*"
