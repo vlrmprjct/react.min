@@ -1,9 +1,9 @@
 {
-    "name": "react-kickstart",
+    "name": "react-app-kickstart",
     "version": "1.0.5",
     "description": "React Application Kickstart Project",
     "main": "./dist",
-    "author": "Thomas Meschke <thomas.meschke@aifinyo.de>",
+    "author": "Thomas Meschke <mail@lokalnetz.com>",
     "license": "MIT",
     "repository": "",
     "scripts": {
@@ -13,27 +13,31 @@
     "dependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "typescript": "^5.0.4"
+        "typescript": "^5.1.6"
     },
     "devDependencies": {
         "@svgr/webpack": "^8.0.1",
-        "@types/react": "^18.2.7",
-        "@types/react-dom": "^18.2.4",
+        "@types/react": "^18.2.14",
+        "@types/react-dom": "^18.2.7",
         "copy-webpack-plugin": "^11.0.0",
         "css-loader": "^6.8.1",
-        "css-minimizer-webpack-plugin": "^5.0.0",
-        "dotenv": "^16.0.3",
+        "css-minimizer-webpack-plugin": "^5.0.1",
+        "dotenv": "^16.3.1",
         "dotenv-webpack": "^8.0.1",
-        "html-webpack-plugin": "^5.5.1",
+        "html-webpack-plugin": "^5.5.3",
         "mini-css-extract-plugin": "^2.7.6",
-        "sass": "^1.62.1",
-        "sass-loader": "^13.3.1",
+        "sass": "^1.63.6",
+        "sass-loader": "^13.3.2",
         "sass-resources-loader": "^2.2.5",
         "style-loader": "^3.3.3",
         "terser-webpack-plugin": "^5.3.9",
-        "ts-loader": "^9.4.3",
-        "webpack": "^5.84.1",
-        "webpack-cli": "^5.1.1",
-        "webpack-dev-server": "^4.15.0"
+        "ts-loader": "^9.4.4",
+        "webpack": "^5.88.1",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^4.15.1"
+    },
+    "engines": {
+        "node": ">=18.15.0",
+        "npm": "~9.5.0"
     }
 }
