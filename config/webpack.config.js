@@ -121,7 +121,7 @@ module.exports = (env) => {
                 minSize: 0,
                 cacheGroups: {
                     vendor: {
-                        test: /[\\/]node_modules[\\/]/,
+                        test: /[\\/](vendor|node_modules)[\\/](?=.*\.js$)/,
                         name(module) {
                             const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
                             return `vendors.${packageName.replace('@', '')}`;
