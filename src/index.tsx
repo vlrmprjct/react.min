@@ -1,7 +1,8 @@
-import React, { createElement } from 'react';
-import { App } from './App';
+import { createElement } from 'react';
 import { createRoot } from 'react-dom/client';
-import "./scss/index.scss";
+import { App } from './App';
+
+import'./scss/index.scss';
 
 const root = document.body.querySelector('[data-root]');
 
