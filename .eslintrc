@@ -1,0 +1,41 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "globals": {
+        "Color": "readonly",
+        "Icon": "readonly",
+        "Shape": "readonly",
+        "Size": "readonly"
+    },
+    "extends": [
+        "@billomat/eslint-config-base",
+        "@billomat/eslint-config-ts",
+        "@billomat/eslint-config-react",
+    ],
+    "plugins": [
+        "jest"
+    ],
+    "ignorePatterns": [
+        "build/**",
+        "config/**",
+        "coverage/**",
+        "tsconfig.*"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "*.ts",
+                "*.tsx"
+            ],
+            "rules": {
+                "no-undef": "off",
+                "no-unused-vars": "off",
+                "react/prop-types": "off"
+            }
+        }
+    ],
+    "rules": {}
+}

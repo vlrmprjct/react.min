@@ -8,7 +8,10 @@
     "repository": "",
     "scripts": {
         "start": "NODE_ENV=development webpack serve --config config/webpack.config.js --env development --hot",
-        "build": "NODE_ENV=production webpack --config config/webpack.config.js --env production"
+        "build": "NODE_ENV=production webpack --config config/webpack.config.js --env production",
+        "eslint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+        "stylelint": "stylelint 'src/**/*.scss' --quiet-deprecation-warnings",
+        "test": "npm run stylelint && npm run eslint"
     },
     "dependencies": {
         "react": "^18.2.0",
@@ -16,6 +19,9 @@
         "typescript": "^5.1.6"
     },
     "devDependencies": {
+        "@billomat/eslint-config-base": "^0.10.13",
+        "@billomat/eslint-config-react": "^0.10.13",
+        "@billomat/eslint-config-ts": "^0.10.13",
         "@svgr/webpack": "^8.0.1",
         "@types/react": "^18.2.14",
         "@types/react-dom": "^18.2.7",
@@ -30,6 +36,10 @@
         "sass-loader": "^13.3.2",
         "sass-resources-loader": "^2.2.5",
         "style-loader": "^3.3.3",
+        "stylelint": "^15.10.2",
+        "stylelint-config-standard": "^34.0.0",
+        "stylelint-config-standard-scss": "^10.0.0",
+        "stylelint-scss": "^5.1.0",
         "terser-webpack-plugin": "^5.3.9",
         "ts-loader": "^9.4.4",
         "webpack": "^5.88.1",
