@@ -1,7 +1,8 @@
 # React App Kickstart
 
-## Why ?
-Many kickstarter projects providing too many features and packages that no one needs.
+### Branches
+* `main` branch contains a basic setup
+* `main-extended` includes full lint config + `.npmrc` template
 
 ### Rules
 * No CRA ( create-react-app )
@@ -27,8 +28,7 @@ Many kickstarter projects providing too many features and packages that no one n
 * Images support ✅
 * Webfonts support ✅
 
-### Tasks up to you
+### Tasks up to you @ `main` branch
 * Eslint
 * Stylelint
 * Browserlist
-
