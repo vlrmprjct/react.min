@@ -9,7 +9,7 @@
     "scripts": {
         "start": "NODE_ENV=development webpack serve --config config/webpack.config.js --env development --hot",
         "build": "NODE_ENV=production webpack --config config/webpack.config.js --env production",
-        "update": "npx npm-check-updates -u"
+        "update": "npx npm-check-updates"
     },
     "dependencies": {
         "react": "^18.2.0",
