@@ -8,17 +8,18 @@
     "repository": "",
     "scripts": {
         "start": "NODE_ENV=development webpack serve --config config/webpack.config.js --env development --hot",
-        "build": "NODE_ENV=production webpack --config config/webpack.config.js --env production"
+        "build": "NODE_ENV=production webpack --config config/webpack.config.js --env production",
+        "update": "npx npm-check-updates -u"
     },
     "dependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "typescript": "^5.1.6"
+        "typescript": "^5.2.2"
     },
     "devDependencies": {
-        "@svgr/webpack": "^8.0.1",
-        "@types/react": "^18.2.14",
-        "@types/react-dom": "^18.2.7",
+        "@svgr/webpack": "^8.1.0",
+        "@types/react": "^18.2.28",
+        "@types/react-dom": "^18.2.13",
         "copy-webpack-plugin": "^11.0.0",
         "css-loader": "^6.8.1",
         "css-minimizer-webpack-plugin": "^5.0.1",
@@ -26,18 +27,18 @@
         "dotenv-webpack": "^8.0.1",
         "html-webpack-plugin": "^5.5.3",
         "mini-css-extract-plugin": "^2.7.6",
-        "sass": "^1.63.6",
+        "sass": "^1.69.4",
         "sass-loader": "^13.3.2",
         "sass-resources-loader": "^2.2.5",
         "style-loader": "^3.3.3",
         "terser-webpack-plugin": "^5.3.9",
-        "ts-loader": "^9.4.4",
-        "webpack": "^5.88.1",
+        "ts-loader": "^9.5.0",
+        "webpack": "^5.89.0",
         "webpack-cli": "^5.1.4",
         "webpack-dev-server": "^4.15.1"
     },
     "engines": {
-        "node": ">=18.15.0",
-        "npm": "~9.5.0"
+        "node": ">=18.18.0",
+        "npm": "~9.8.1"
     }
 }
