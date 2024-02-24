@@ -23,9 +23,11 @@
         "sourceMap": true,
         "declaration": false,
         "declarationMap": false,
-        // "rootDir": "src",
+        "rootDir": "src",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"]
+        }
     },
-    "include": [
-        "src/**/*"
-    ]
+    "include": ["src/**/*"]
 }
