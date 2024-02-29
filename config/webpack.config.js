@@ -21,6 +21,7 @@ module.exports = (env) => {
         resolve: {
             extensions: ['.tsx', '.ts', '.js'],
             alias: {
+                react: path.resolve('node_modules', 'react'),
                 '@': path.resolve(__dirname, './../src'),
             }
         },
@@ -39,7 +40,11 @@ module.exports = (env) => {
                         {
                             loader: 'css-loader',
                             options: {
-                                importLoaders: 2,
+                                modules: {
+                                    mode: 'local',
+                                    localIdentName: '[local]',
+                                    namedExport: true,
+                                },
                             },
                         },
                         {
@@ -55,6 +60,7 @@ module.exports = (env) => {
                 },
                 {
                     test: /\.svg$/,
+                    exclude: /node_modules/,
                     use: ['@svgr/webpack'],
                 },
                 {
