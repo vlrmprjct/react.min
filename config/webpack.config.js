@@ -10,6 +10,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 Env.config({ path: `.env.local`, override: true });
 
 module.exports = (env) => {
+
     return {
         mode: (env.production) ? 'production' : 'development',
         devtool: (env.production) ? 'nosources-source-map' : 'inline-source-map',
@@ -23,6 +24,8 @@ module.exports = (env) => {
             alias: {
                 react: path.resolve('node_modules', 'react'),
                 '@': path.resolve(__dirname, './../src'),
+                '@assets': path.resolve('src', 'assets'),
+                '@billomat/ui': path.resolve('node_modules', '@billomat/ui'),
             }
         },
         module: {
@@ -34,7 +37,6 @@ module.exports = (env) => {
                 },
                 {
                     test: /\.(sa|sc|c)ss$/,
-                    exclude: /node_modules/,
                     use: [
                         env.production ? MiniCssExtractPlugin.loader : 'style-loader',
                         {
@@ -56,6 +58,10 @@ module.exports = (env) => {
                                 resources: path.resolve(__dirname, './../src/scss/base.scss'),
                             },
                         },
+                        {
+                            // Conditional css / scss @import loader used with npm link
+                            loader: path.resolve(__dirname, 'import.loader.js'),
+                        },
                     ],
                 },
                 {
@@ -76,7 +82,15 @@ module.exports = (env) => {
                     generator: {
                         filename: 'fonts/[name][ext]'
                     }
-                }
+                },
+                {
+                    // All UI Icons
+                    test: /@billomat[\\/]ui.*\.svg$/,
+                    type: 'asset/resource',
+                    generator: {
+                        filename: 'icons/[name].[contenthash][ext]',
+                    },
+                },
             ],
         },
         plugins: [
