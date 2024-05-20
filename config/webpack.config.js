@@ -60,7 +60,7 @@ module.exports = (env) => {
                         },
                         {
                             // Conditional css / scss @import loader used with npm link
-                            loader: path.resolve(__dirname, 'import.loader.js'),
+                            loader: path.resolve(__dirname, 'ui-import.loader.js'),
                         },
                     ],
                 },
