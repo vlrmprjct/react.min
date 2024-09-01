@@ -1,34 +1,57 @@
-# React App Kickstart
+# React Template ⚛️
 
-### Branches
-* `main` branch contains a basic setup
-* `main-extended` includes full lint config + `.npmrc` template
+The quickest way to test out or prototype something usong React without having to set up a new project everytime.
 
-### Rules
-* No CRA ( create-react-app )
-* Minimum setup
-* Maximum comfort
-* Readable webpack config
-* Less thirdparty config packages
+## Get Started (Locally)
 
-### Environnment supported dot-env's
-* `.env.production`
-* `.env.development`
-* `.env.local`
+1. Clone the project
+2. Run `npm ci`
+3. Run `npm start`
+4. Open [http://localhost:9000](http://localhost:9000) to view it in the browser.
+5. Go to `src/App.tsx` to start prototyping.
 
-### Currently build-In
-* Typescript support ✅
-* SCSS support ✅
-* Global SCSS import file support ✅
-* Dot.Env support ✅
-* Compressed minified production-mode ✅
-* Splitted chunks ✅
-* Assets directory ✅
-* SVG support ✅
-* Images support ✅
-* Webfonts support ✅
+## 10 Reasons Why
 
-### Tasks up to you @ `main` branch
-* Eslint
-* Stylelint
-* Browserlist
+-   🥺 You're a new Hubber, you have enough to learn already
+-   👁 Color mode test your layout quickly
+-   🧖‍♀️ Fast prototyping
+-   🗑 No clutter on your local computer
+-   🥴 No local problems
+-   ❌ No browser log errors
+-   🪄 No linter or formatter issues
+-   ▶️ Instant start the app
+-   🚀 No need to set up a new react project, just instantly start coding
+-   🧪 You want to learn React
+
+## Repository Template Rules
+
+-   No CRA, No Vite, No Whatever-Framwork
+-   Minimum setup
+-   Maximum comfort
+-   Readable webpack config
+-   Less thirdparty config packages
+
+## Currently Build-In
+
+-   ✅ Typescript support
+-   ✅ SCSS support
+-   ✅ Global SCSS import file support
+-   ✅ Dot.Env support
+-   ✅ Out of the box working build
+-   ✅ Splitted chunks
+-   ✅ Assets directory
+-   ✅ SVG support
+-   ✅ Images support
+-   ✅ Webfonts support
+
+## Environnment Supported dot-env's
+
+- 💾 `.env.production`
+- 💾 `.env.development`
+- 💾 `.env.local`
+
+## Tasks may up to you
+
+- Eslint
+- Stylelint
+- Browserlist
