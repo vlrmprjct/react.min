@@ -98,7 +98,7 @@ module.exports = (env) => {
                     removeRedundantAttributes: true,
                     useShortDoctype: true,
                 },
-                inject: 'body',
+                scriptLoading: 'module'
             }),
             new CopyWebpackPlugin({
                 patterns: [
@@ -130,11 +130,10 @@ module.exports = (env) => {
                 minSize: 0,
                 cacheGroups: {
                     vendor: {
-                        test: /[\\/](vendor|node_modules)[\\/](?=.*\.js$)/,
-                        name(module) {
-                            const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
-                            return `vendors.${packageName.replace('@', '')}`;
-                        },
+                        test: /[\\/]node_modules[\\/](?=.*\.js$)/,
+                        name: 'vendor',
+                        chunks: 'all',
+                        enforce: true,
                     },
                 },
             },
