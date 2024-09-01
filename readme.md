@@ -1,6 +1,6 @@
-# React Template ⚛️
+# VLRM React Template ⚛️
 
-The quickest way to test out or prototype something usong React without having to set up a new project everytime.
+The fastest way to test or prototype something with React without having to set up a new project every time.
 
 ## Get Started (Locally)
 
@@ -10,7 +10,7 @@ The quickest way to test out or prototype something usong React without having t
 4. Open [http://localhost:9000](http://localhost:9000) to view it in the browser.
 5. Go to `src/App.tsx` to start prototyping.
 
-## 10 Reasons Why
+## 12 Reasons Why
 
 -   🥺 You're a new Hubber, you have enough to learn already
 -   👁 Color mode test your layout quickly
@@ -19,9 +19,11 @@ The quickest way to test out or prototype something usong React without having t
 -   🥴 No local problems
 -   ❌ No browser log errors
 -   🪄 No linter or formatter issues
+-   📚 No cluttered directory structur
 -   ▶️ Instant start the app
 -   🚀 No need to set up a new react project, just instantly start coding
 -   🧪 You want to learn React
+-   🤯 Fokus
 
 ## Repository Template Rules
 
