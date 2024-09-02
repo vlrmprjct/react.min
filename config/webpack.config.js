@@ -10,9 +10,10 @@ const TerserPlugin = require('terser-webpack-plugin');
 Env.config({ path: `.env.local`, override: true });
 
 module.exports = (env) => {
+
     return {
         mode: (env.production) ? 'production' : 'development',
-        devtool: (env.production) ? 'nosources-source-map' : 'inline-source-map',
+        devtool: (env.production) ? false : 'inline-source-map',
         stats: 'normal',
         devServer: {
             compress: true,
@@ -87,7 +88,7 @@ module.exports = (env) => {
                 silent: true,
             }),
             new MiniCssExtractPlugin({
-                filename: '[name].[contenthash].css',
+                filename: '[name].[chunkhash].css',
             }),
             new HtmlWebpackPlugin({
                 template: 'public/index.html',
@@ -140,7 +141,7 @@ module.exports = (env) => {
         },
         output: {
             path: path.resolve(__dirname, './../dist'),
-            filename: '[name].[contenthash].js',
+            filename: '[name].[chunkhash].js',
             publicPath: '',
         },
     }
