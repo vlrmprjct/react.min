@@ -1,6 +1,6 @@
-# VLRM React Template ⚛️
+# React Template App ⚛️
 
-The fastest way to test or prototype something with React without having to set up a new project every time.
+This repository lets you test or prototype React apps without the hassle of setting up a new project every time. It also includes an easy way to build for production, so you can deploy your app with just a few simple steps.
 
 ## Get Started (Locally)
 
@@ -12,26 +12,50 @@ The fastest way to test or prototype something with React without having to set 
 
 ## 12 Reasons Why
 
--   🥺 You're a new Hubber, you have enough to learn already
--   👁 Color mode test your layout quickly
--   🧖‍♀️ Fast prototyping
--   🗑 No clutter on your local computer
--   🥴 No local problems
--   ❌ No browser log errors
--   🪄 No linter or formatter issues
--   📚 No cluttered directory structur
--   ▶️ Instant start the app
--   🚀 No need to set up a new react project, just instantly start coding
--   🧪 You want to learn React
--   🤯 Fokus
+- 🥺 New to GitHub? Keep it simple and focus on learning.
+- 👁 Quickly test layouts with color mode.
+- 🧖‍♀️ Prototype faster without setup delays.
+- 🗑 Keep your local machine clean—no unnecessary files.
+- 🥴 Avoid local environment issues—just start coding.
+- ❌ No browser log errors to distract you.
+- 🪄 No linter or formatter issues—just code.
+- 📚 Clean directory structure—no clutter, just essentials.
+- 🚀 Skip project setup—jump straight into coding.
+- 🧪 Perfect for learning React without setup headaches.
+- ▶️ Instantly start the app and see results.
+- 🤯 Stay focused on what matters—building your app.
 
 ## Repository Template Rules
 
--   No CRA, No Vite, No Whatever-Framwork
--   Minimum setup
--   Maximum comfort
--   Readable webpack config
--   Less thirdparty config packages
+- No CRA, No Vite, No Overhyped Frameworks:
+
+    _Keep it simple, no unnecessary complexity_
+
+- Minimum Setup:
+
+    _Start coding right away with the bare essentials_
+
+- Maximum Comfort:
+
+    _Prioritize developer experience with easy-to-use tools_
+
+- Readable Webpack Config:
+
+    _Transparent and easy-to-understand configuration_
+
+- Fewer Third-Party Config Packages:
+
+    _Reduce dependency clutter and keep control over your setup_
+
+- Lightweight Dependencies:
+
+    _Only include what’s necessary—no bloat_
+- Easy Customization:
+
+    _Adapt the setup to your needs without hassle_
+- Focus on Code, Not Configuration:
+
+    _Spend your time building, not tweaking settings_
 
 ## Currently Build-In
 
@@ -56,4 +80,6 @@ The fastest way to test or prototype something with React without having to set 
 
 - Eslint
 - Stylelint
+- Formatter
+- Tests
 - Browserlist
