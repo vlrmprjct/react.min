@@ -4,11 +4,13 @@
     "description": "React Application Kickstart Project",
     "main": "./dist",
     "author": "Thomas Meschke <mail@lokalnetz.com>",
+    "homepage": "https://react-min.vercel.app/",
     "license": "MIT",
-    "repository": "",
+    "repository": "https://github.com/vlrmprjct/react.min",
     "scripts": {
         "start": "NODE_ENV=development webpack serve --config config/webpack.config.js --env development --hot",
         "build": "NODE_ENV=production webpack --config config/webpack.config.js --env production",
+        "lint:scss": "stylelint src/**/*.{css,scss}",
         "update": "npx npm-check-updates"
     },
     "dependencies": {
