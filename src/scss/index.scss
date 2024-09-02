@@ -1,4 +1,4 @@
-@import './fonts';
+@import "./fonts";
 
 :root {
     --bg-primary: #58C4DC;
@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'OpenSans-Regular';
+    font-family: OpenSans-Regular, sans-serif;
     color: var(--text-primary);
     background: $bg;
 }
