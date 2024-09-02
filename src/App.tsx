@@ -7,8 +7,10 @@ export const App = () => {
             <div className="logo">
                 <Logo />
             </div>
-            <h1>Hello {process.env.APP_NAME}</h1>
-            <h2>Start editing!</h2>
+            <h1>{process.env.APP_NAME}</h1>
+            <p>Start coding!</p>
+            <code>Mode: {process.env.NODE_ENV}</code>
+            <code>Version: v{process.env.npm_package_version}</code>
         </div>
     );
 };
