@@ -9,9 +9,9 @@
     "repository": "https://github.com/vlrmprjct/react.min",
     "scripts": {
         "start": "webpack serve --config config/webpack.config.js --env development --hot",
-        "build": "NODE_ENV=production webpack --config config/webpack.config.js --env production",
+        "build": "rm -rf dist && webpack --config config/webpack.config.js --env production",
         "lint:scss": "stylelint src/**/*.{css,scss}",
-        "lint:js": "eslint ./",
+        "lint:js": "eslint src/",
         "lint": "npm run lint:scss && npm run lint:js",
         "update": "npx npm-check-updates"
     },

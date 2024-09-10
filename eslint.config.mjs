@@ -6,12 +6,6 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default [
-    {
-        ignores: [
-            '**/dist/**',
-            '**/config/**',
-        ],
-    },
     pluginJs.configs.recommended,
     ...tseslint.configs.recommended,
     pluginReact.configs.flat.recommended,
