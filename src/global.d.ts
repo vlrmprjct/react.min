@@ -1,16 +1,16 @@
 declare module '*.scss';
 
-declare module '\*.jpg' {
+declare module '*.jpg' {
     const content: string;
     export default content;
 }
 
-declare module '\*.png' {
+declare module '*.png' {
     const content: string;
     export default content;
 }
 
-declare module '\*.svg' {
+declare module '*.svg' {
     const content: string;
     export default content;
 }
