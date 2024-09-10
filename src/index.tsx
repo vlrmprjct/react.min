@@ -1,6 +1,7 @@
 import { createElement } from 'react';
-import { App } from './App';
 import { createRoot } from 'react-dom/client';
+import { App } from './App';
+
 import './scss/index.scss';
 
 const root = document.body.querySelector('[data-root]');
