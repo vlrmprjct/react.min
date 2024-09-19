@@ -1,15 +1,18 @@
-const path = require('path');
-const Dotenv = require('dotenv-webpack');
-const Env = require('dotenv');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
+import path from 'path';
+import { fileURLToPath } from 'url';
+import Dotenv from 'dotenv-webpack';
+import Env from 'dotenv';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import TerserPlugin from 'terser-webpack-plugin';
 
-Env.config({ path: '.env.local', override: true });
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-module.exports = (env) => {
+Env.config({ path: `.env.local`, override: true });
+
+export default (env) => {
 
     return {
         mode: (env.production) ? 'production' : 'development',
