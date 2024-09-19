@@ -18,6 +18,14 @@ module.exports = (env) => {
         devServer: {
             compress: true,
             port: 9000,
+            hot: true,
+            client: {
+                logging: 'error',
+                overlay: {
+                    errors: true,
+                    warnings: false,
+                },
+            },
         },
         resolve: {
             extensions: ['.tsx', '.ts', '.js'],

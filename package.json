@@ -7,7 +7,7 @@
     "license": "MIT",
     "repository": "",
     "scripts": {
-        "start": "webpack serve --config config/webpack.config.js --env development --hot",
+        "start": "webpack serve --config config/webpack.config.js --env development",
         "build": "webpack --config config/webpack.config.js --env production",
         "update": "npx npm-check-updates"
     },
