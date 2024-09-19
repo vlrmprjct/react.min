@@ -8,7 +8,7 @@
     "license": "MIT",
     "repository": "https://github.com/vlrmprjct/react.min",
     "scripts": {
-        "start": "webpack serve --config config/webpack.config.js --env development --hot",
+        "start": "webpack serve --config config/webpack.config.js --env development",
         "build": "rm -rf dist && webpack --config config/webpack.config.js --env production",
         "lint:scss": "stylelint src/**/*.{css,scss}",
         "lint:js": "eslint src/",
