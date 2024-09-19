@@ -1,9 +1,11 @@
-const eslint = require('@eslint/js');
-const globals = require('globals');
-const tsPlugin = require('@typescript-eslint/eslint-plugin');
-const tsParser = require('@typescript-eslint/parser');
-const reactPlugin = require('eslint-plugin-react');
-const reactHooksPlugin = require('eslint-plugin-react-hooks');
+import path from 'path';
+import { fileURLToPath } from 'url';
+import eslint from '@eslint/js';
+import globals from 'globals';
+import tsPlugin from '@typescript-eslint/eslint-plugin';
+import tsParser from '@typescript-eslint/parser';
+import reactPlugin from 'eslint-plugin-react';
+import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
 const commonConfig = {
     files: ['**/*.{js,jsx,ts,tsx}'],
@@ -21,13 +23,10 @@ const commonConfig = {
     },
     rules: {
         ...eslint.configs.recommended.rules,
-        indent: [
-            'error', 4, {
-                SwitchCase: 1
-            }
-        ],
+        indent: ['error', 4, { SwitchCase: 1 }],
         'max-len': [
-            'error', {
+            'error',
+            {
                 code: 120,
                 ignoreUrls: true,
                 ignoreComments: false,
@@ -57,7 +56,7 @@ const tsConfig = {
         parser: tsParser,
         parserOptions: {
             projectService: true,
-            tsconfigRootDir: __dirname,
+            tsconfigRootDir: path.dirname(fileURLToPath(import.meta.url)),
         },
     },
     plugins: {
@@ -70,8 +69,8 @@ const tsConfig = {
     },
 };
 
-module.exports = [
+export default [
     commonConfig,
     reactConfig,
-    tsConfig,
+    tsConfig
 ];
