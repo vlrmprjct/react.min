@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
-Env.config({ path: `.env.local`, override: true });
+Env.config({ path: '.env.local', override: true });
 
 module.exports = (env) => {
 
@@ -152,5 +152,5 @@ module.exports = (env) => {
             filename: '[name].[chunkhash].js',
             publicPath: '',
         },
-    }
+    };
 };
