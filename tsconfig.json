@@ -3,7 +3,7 @@
         "target": "ES2020",
         "module": "esnext",
         "strict": true,
-        "strictNullChecks": false,
+        "strictNullChecks": true,
         "noImplicitAny": false,
         "esModuleInterop": true,
         "skipLibCheck": true,

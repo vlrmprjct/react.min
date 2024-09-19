@@ -10,7 +10,7 @@ import TerserPlugin from 'terser-webpack-plugin';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-Env.config({ path: `.env.local`, override: true });
+Env.config({ path: '.env.local', override: true });
 
 export default (env) => {
 
