@@ -1,0 +1,32 @@
+{
+    "plugins": [
+		"@stylistic/stylelint-plugin"
+	],
+    "extends": [
+		"stylelint-config-standard-scss",
+		"@stylistic/stylelint-config"
+	],
+    "rules": {
+        "color-hex-length": "long",
+        "selector-class-pattern": [
+            "^[a-z0-9]+(?:--[a-z0-9]+(?:-[a-z0-9]+)?)?$",
+            {
+                "message": "Selector should be written in lowercase with hyphens (selector-class-pattern)",
+                "resolveNestedSelectors": true
+            }
+        ],
+        "selector-pseudo-class-no-unknown": [
+            true,
+            {
+                "ignorePseudoClasses": [
+                    "export"
+                ]
+            }
+        ],
+        "scss/dollar-variable-empty-line-before": null,
+        "scss/dollar-variable-pattern": "^[a-z]+[a-zA-Z]*$",
+        "@stylistic/color-hex-case": "upper",
+        "@stylistic/indentation": 4,
+        "@stylistic/max-line-length": 120
+    }
+}
