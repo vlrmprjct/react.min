@@ -12,7 +12,7 @@
         "start": "webpack serve --config config/webpack.config.js --env development",
         "build": "rm -rf dist && webpack --config config/webpack.config.js --env production",
         "lint:scss": "stylelint src/**/*.{css,scss}",
-        "lint:js": "eslint src/",
+        "lint:js": "eslint",
         "lint": "npm run lint:scss && npm run lint:js",
         "update": "npx npm-check-updates"
     },
