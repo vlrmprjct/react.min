@@ -66,6 +66,7 @@ export default (env) => {
                             loader: 'sass-resources-loader',
                             options: {
                                 resources: path.resolve(__dirname, './../src/scss/base.scss'),
+                                hoistUseStatements: true,
                             },
                         },
                     ],
