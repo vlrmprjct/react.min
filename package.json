@@ -1,6 +1,6 @@
 {
     "name": "react-app-kickstart",
-    "version": "1.1.2",
+    "version": "1.1.3",
     "description": "React Application Kickstart Project",
     "main": "./dist",
     "author": "Thomas Meschke <mail@lokalnetz.com>",
