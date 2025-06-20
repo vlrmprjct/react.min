@@ -1,5 +1,5 @@
-![Static Badge](https://img.shields.io/badge/Node-v22.16.0-3)
-![GitHub Tag](https://img.shields.io/github/v/tag/vlrmprjct/react.min)
+![Static Badge](https://img.shields.io/badge/Node-v22.16.0-3?style=flat-square)
+![GitHub Tag](https://img.shields.io/github/v/tag/vlrmprjct/react.min?style=flat-square)
 ![GitHub License](https://img.shields.io/github/license/vlrmprjct/react.min?style=flat-square)
 ![GitHub Issues](https://img.shields.io/github/issues/vlrmprjct/react.min?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/vlrmprjct/react.min?style=flat-square)
