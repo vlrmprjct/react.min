@@ -1,3 +1,12 @@
+![Static Badge](https://img.shields.io/badge/Node-v22.16.0-3)
+![GitHub Tag](https://img.shields.io/github/v/tag/vlrmprjct/react.min)
+![GitHub License](https://img.shields.io/github/license/vlrmprjct/react.min?style=flat-square)
+![GitHub Issues](https://img.shields.io/github/issues/vlrmprjct/react.min?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/vlrmprjct/react.min?style=flat-square)
+![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/vlrmprjct/react.min?style=flat-square)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/vlrmprjct/react.min?style=flat-square)
+
+
 # React Template App ⚛️
 
 This repository lets you test or prototype React apps without the hassle of setting up a new project every time. It also includes an easy way to build for production, so you can deploy your app with just a few simple steps.
